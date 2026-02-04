@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "safari",
-  "title": "Safari",
+  "name": "safairy",
+  "title": "Safairy",
   "description": "Manage your Safari Tabs, History and Reading List",
   "categories": [
     "Applications",
@@ -28,9 +28,16 @@
   "license": "MIT",
   "commands": [
     {
+      "name": "combine-search",
+      "title": "Combine Search",
+      "subtitle": "Safairy",
+      "description": "Search across tabs, history, and bookmarks in one place",
+      "mode": "view"
+    },
+    {
       "name": "cloud-tabs",
       "title": "Search Tabs",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Browse your open tabs",
       "mode": "view",
       "preferences": [
@@ -67,7 +74,7 @@
     {
       "name": "reading-list",
       "title": "Search Reading List",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Browse your reading list",
       "mode": "view",
       "preferences": [
@@ -92,35 +99,35 @@
     {
       "name": "add-to-reading-list",
       "title": "Add to Reading List",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Add the current Safari tab to your Reading List",
       "mode": "no-view"
     },
     {
       "name": "search-history",
       "title": "Search History",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Browse your history",
       "mode": "view"
     },
     {
       "name": "search-bookmarks",
       "title": "Search Bookmarks",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Browse your bookmarks",
       "mode": "view"
     },
     {
       "name": "copy-to-clipboard",
       "title": "Copy URL to Clipboard",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Copy the current Safari tab URL to your clipboard",
       "mode": "no-view"
     },
     {
       "name": "copy-title-as-link-to-clipboard",
       "title": "Copy Title as Link to Clipboard",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Copy the current Safari tab title as Markdown link ([title](url)) to your clipboard",
       "mode": "no-view",
       "preferences": [
@@ -138,7 +145,7 @@
     {
       "name": "close-other-tabs",
       "title": "Close Other Tabs",
-      "subtitle": "Safari",
+      "subtitle": "Safairy",
       "description": "Close all Safari tabs except the current one",
       "mode": "no-view"
     }
