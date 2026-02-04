@@ -1,31 +1,98 @@
-<p align="center">
-  <img src="images/store-logo.webp" height="128">
-  <h1 align="center">Raycast Extensions</h1>
-</p>
+# Raycast Safari Extension
 
-<p align="center">
-  <a aria-label="Follow Raycast on X" href="https://x.com/raycast">
-    <img alt="" src="https://img.shields.io/badge/Follow%20@raycast-black.svg?style=for-the-badge&logo=X">
-  </a>
-  <a aria-label="Join the community on Slack" href="https://raycast.com/community">
-    <img alt="" src="https://img.shields.io/badge/Join%20the%20community-black.svg?style=for-the-badge&logo=Raycast&logoColor=fff">
-  </a>
-</p>
+Forked from [Raycast/extensions](https://github.com/raycast/extensions/tree/main/extensions/safari)
 
-[Raycast](https://raycast.com/) lets you control your tools with a few keystrokes. This repository contains all extensions that are available in the [Raycast Store](https://raycast.com/store). It also includes documentation and examples of how to extend Raycast using React.
+A Raycast extension for managing Safari tabs, history, bookmarks, and reading list.
 
-![Header](images/header.webp)
+## Features
 
-## Getting Started
+### Commands
 
-Visit [https://developers.raycast.com](https://developers.raycast.com) to get started with our API. If you want to discover and install extensions, check out [our Store](https://raycast.com/store).
+| Command | Description |
+|---------|-------------|
+| **Search Tabs** | Browse and search your open Safari tabs, including iCloud tabs across all devices |
+| **Search History** | Search through your Safari browsing history with fuzzy search support |
+| **Search Bookmarks** | Search and browse your Safari bookmarks |
+| **Search Reading List** | Browse your Safari reading list with read/unread status grouping |
+| **Add to Reading List** | Add the current Safari tab to your reading list |
+| **Copy URL to Clipboard** | Copy the current Safari tab URL |
+| **Copy Title as Link to Clipboard** | Copy the current tab title as a Markdown link |
+| **Close Other Tabs** | Close all Safari tabs except the current one |
 
-Be sure to read and follow our [Community](https://manual.raycast.com/community-guidelines) and [Extension](https://manual.raycast.com/extensions) guidelines and [Acceptable Use Policy](https://www.raycast.com/aup) when submitting your extension and interacting with other folks in this repository.
+### AI Capabilities
 
-## Feedback
+The extension provides AI-powered tools for Raycast Pro:
 
-Raycast wouldn't be where it is without the feedback from our community, so we would be happy to hear what you think of the API / DevX and how we can improve. Please use [GitHub issues](https://github.com/raycast/extensions/issues/new/choose) for everything API related (bugs, improvements suggestions, developer experience, docs, etc). We have a few [templates](https://developers.raycast.com/examples) that should help you get started.
+- Summarize the current tab content
+- Search and open items in your reading list
+- Find and retrieve bookmarks
+- Search browsing history
+- Get info about all open tabs
+- Get tab content (text or HTML source)
+- Close specific tabs
 
-## Community
+### Preferences
 
-Join our [Slack community](https://raycast.com/community) to share your extension, debug nasty bugs or simply get to know like-minded folks.
+| Preference | Description |
+|------------|-------------|
+| **Local Safari Browser** | Switch between Safari and Safari Technology Preview |
+| **Pinyin Support** | Enable pinyin search for Chinese characters |
+| **Fuzzy Search** | Enable fuzzy search for more flexible searching |
+| **iCloud Tabs** | Include iCloud tabs across all your devices |
+
+## Requirements
+
+- macOS
+- [Raycast](https://raycast.com/)
+- Safari or Safari Technology Preview
+- Full Disk Access permission for Raycast (to read Safari data)
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+
+# Build the extension
+npm run build
+
+# Lint code
+npm run lint
+
+# Fix linting issues
+npm run fix-lint
+```
+
+## Permissions
+
+This extension requires **Full Disk Access** to function properly:
+
+1. Open System Settings > Privacy & Security
+2. Find Raycast and enable "Full Disk Access"
+3. Restart Raycast
+
+## Project Structure
+
+```
+extensions/safari/
+├── src/
+│   ├── components/     # React components
+│   ├── hooks/          # Custom hooks
+│   ├── lang-adaptor/   # Language adapters (pinyin support)
+│   └── tools/          # Safari tool functions
+├── swift/              # Swift library for Safari interaction
+└── assets/             # Images and icons
+```
+
+## License
+
+MIT
+
+## Credits
+
+Originally developed by the Raycast team and contributors.
+
+- Fork from: https://github.com/raycast/extensions/tree/main/extensions/safari
